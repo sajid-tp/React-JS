@@ -110,3 +110,35 @@ Send analytics event
 
 Reducer
 ```
+- Primary use 5: Error handling
+
+Middleware can catch errors.
+```text
+dispatch(fetchUsers())
+
+↓
+
+API fails
+
+↓
+
+Middleware
+
+↓
+
+Dispatch error action
+```
+- Primary use 6: Local storage
+
+Whenever state changes:
+```text
+dispatch(addTodo())
+
+↓
+
+Reducer updates state
+
+↓
+
+Middleware saves todos to localStorage
+```
