@@ -92,3 +92,21 @@ Yes → Continue
 
 No → Stop
 ```
+- Primary use 4: Analytics
+
+Example:
+```text
+User clicks Buy
+
+↓
+
+Middleware
+
+↓
+
+Send analytics event
+
+↓
+
+Reducer
+```
