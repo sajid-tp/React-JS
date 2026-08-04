@@ -40,7 +40,5 @@ function App() {
 }
 ```
 If name changes,
-
 Child receives a new prop.
-
 Child re-renders.
