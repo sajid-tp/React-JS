@@ -142,3 +142,26 @@ Reducer updates state
 
 Middleware saves todos to localStorage
 ```
+### Why middleware exists
+
+Imagine Redux without middleware.
+```text
+dispatch(action)
+
+↓
+
+Reducer
+
+↓
+
+State
+```
+There is nowhere to:
+
+Make API calls
+Log actions
+Validate actions
+Save to storage
+Handle errors
+
+Middleware creates that place.
