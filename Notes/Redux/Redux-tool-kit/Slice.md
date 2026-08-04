@@ -35,3 +35,6 @@ Action:
     payload: product
 }
 ```
+###createSlice()
+
+Definition: createSlice() is a Redux Toolkit function that generates a "slice" of Redux logic in one place — automatically creating the reducer function, the action types, and the action creators for a specific piece of state, based on the reducer functions you define.
