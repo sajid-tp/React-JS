@@ -14,7 +14,7 @@ function Counter() {
 Clicking the button changes count.  
 Counter re-renders.
 
-  - 2. Its parent re-renders
+- Its parent re-renders
 ```javascript
 function App() {
   const [count, setCount] = useState(0);
