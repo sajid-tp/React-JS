@@ -43,4 +43,4 @@ If name changes,
 
 Child receives a new prop.
 
-➡️ Child re-renders.
+Child re-renders.
