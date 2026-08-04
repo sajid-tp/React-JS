@@ -31,3 +31,16 @@ App re-renders
 Child re-renders
 
 Even if Child has no props. 
+- The props it receives change ✅
+```javascript
+function App() {
+  const [name, setName] = useState("Sajid");
+
+  return <Child name={name} />;
+}
+```
+If name changes,
+
+Child receives a new prop.
+
+➡️ Child re-renders.
