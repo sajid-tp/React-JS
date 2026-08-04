@@ -61,3 +61,11 @@ Every component using
 useContext(ThemeContext)
 ```
 re-renders.
+
+- Redux state selected with useSelector() changes ✅
+```
+const cart = useSelector(state => state.cart);
+```
+If the cart changes,
+
+that component re-renders.
