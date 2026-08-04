@@ -15,3 +15,26 @@ It only describes an event.
   payload: product
 }
 ```
+
+### Action Creator 
+
+
+**Definition:**
+An action creator is a function that creates and returns an action object.
+
+Instead of writing actions manually,
+```javascript
+{
+  type: "cart/addItem",
+  payload: product
+}
+```
+
+```javascript
+const addItem = (product) => {
+  return {
+    type: "cart/addItem",
+    payload: product
+  };
+};
+```
