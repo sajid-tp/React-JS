@@ -50,3 +50,24 @@ Thunk Middleware
                 ▼
 Reducer
 ```
+
+### Primary use 2: Logging
+
+Every action can be logged.
+```text
+dispatch(addItem())
+
+↓
+
+Logger Middleware
+
+↓
+
+Action: cart/addItem
+
+↓
+
+Reducer
+```
+
+Useful while debugging.
