@@ -42,3 +42,22 @@ function App() {
 If name changes,
 Child receives a new prop.
 Child re-renders.
+
+- The context value changes 
+```
+<ThemeContext.Provider value={theme}>
+```
+
+Suppose
+
+theme = "light"
+
+becomes
+
+theme = "dark"
+
+Every component using
+```
+useContext(ThemeContext)
+```
+re-renders.
