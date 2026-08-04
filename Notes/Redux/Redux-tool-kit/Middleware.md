@@ -16,7 +16,7 @@ Reducer
 Updated State
 ```
 
-###Why middleware?
+### Why middleware?
 
 - Primary use 1: Handle asynchronous operations
 
@@ -28,7 +28,7 @@ dispatch(fetchProducts());
 
 A reducer cannot do this:
 
-// ❌ Wrong
+// Wrong
 ```javascript
 const reducer = (state, action) => {
     const data = await fetch("/products");
