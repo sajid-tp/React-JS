@@ -47,3 +47,31 @@ or
 
 products/fetchProducts/rejected
 ```
+
+How it works
+
+When you dispatch:
+```javascript
+dispatch(fetchProducts());
+```
+Redux Toolkit does this internally:
+```text
+dispatch(fetchProducts.pending)
+
+↓
+
+Run async function
+
+↓
+
+Success?
+
+↓
+
+dispatch(fetchProducts.fulfilled)
+```
+or
+```javascript
+dispatch(fetchProducts.rejected)
+```
+You don't dispatch those three actions yourself.
