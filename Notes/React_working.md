@@ -11,5 +11,23 @@ function Counter() {
   );  
 } 
 ```
-Clicking the button changes count.
+Clicking the button changes count.  
 Counter re-renders.
+
+  - 2. Its parent re-renders
+```javascript
+function App() {
+  const [count, setCount] = useState(0);
+
+  return <Child />;
+}
+```
+
+When count changes,App re-renders.
+By default, React also renders Child again.
+
+App re-renders
+      ↓
+Child re-renders
+
+Even if Child has no props. 
