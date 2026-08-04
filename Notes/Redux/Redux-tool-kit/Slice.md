@@ -15,3 +15,22 @@ const cartSlice = createSlice({
 });
 ```
 Everything related to the cart lives in one place.
+
+### Payload
+
+**Definition:**
+
+The payload is the data carried by an action that provides the information needed to update the state.
+
+Example:
+
+dispatch(addItem(product));
+
+The product is the payload.
+
+Action:
+
+{
+    type: "cart/addItem",
+    payload: product
+}
