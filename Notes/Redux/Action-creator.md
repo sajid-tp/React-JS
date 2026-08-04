@@ -29,7 +29,7 @@ Instead of writing actions manually,
   payload: product
 }
 ```
-
+you write,
 ```javascript
 const addItem = (product) => {
   return {
