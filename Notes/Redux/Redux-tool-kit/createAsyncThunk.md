@@ -134,10 +134,10 @@ users/fetchUsers/rejected
 
 It automatically handles:
 
-✅ API calls
-✅ Loading state
-✅ Success state
-✅ Error state
-✅ Promise lifecycle
+- API calls
+- Loading state
+- Success state
+- Error state
+- Promise lifecycle
 
 without you having to create separate action creators and action types.
