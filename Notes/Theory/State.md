@@ -12,9 +12,10 @@ Products
 Notifications
 
 Example:
-
+```javascript
 {
   user: null,
   cart: [],
   theme: "dark"
 }
+```
