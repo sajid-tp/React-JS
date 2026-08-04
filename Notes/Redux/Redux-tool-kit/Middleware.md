@@ -51,7 +51,7 @@ Thunk Middleware
 Reducer
 ```
 
-### Primary use 2: Logging
+- Primary use 2: Logging
 
 Every action can be logged.
 ```text
@@ -71,3 +71,24 @@ Reducer
 ```
 
 Useful while debugging.
+
+- Primary use 3: Validation
+
+Before allowing an action to continue:
+```text
+dispatch(deleteAccount())
+
+↓
+
+Middleware
+
+↓
+
+Is user authenticated?
+
+↓
+
+Yes → Continue
+
+No → Stop
+```
