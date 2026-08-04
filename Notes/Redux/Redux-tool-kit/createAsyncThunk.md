@@ -141,3 +141,41 @@ It automatically handles:
 - Promise lifecycle
 
 without you having to create separate action creators and action types.
+
+### Relationship with thunk middleware
+
+This is important:
+
+createAsyncThunk does not replace thunk middleware.
+
+Instead:
+```text
+dispatch(fetchUsers())
+
+↓
+
+Thunk Middleware
+
+↓
+
+createAsyncThunk async function
+
+↓
+
+Dispatch pending
+
+↓
+
+API Call
+
+↓
+
+Dispatch fulfilled/rejected
+
+↓
+
+Reducer
+```
+createAsyncThunk uses the thunk middleware behind the scenes.
+
+That's why configureStore() includes redux-thunk by default—without thunk middleware, createAsyncThunk wouldn't be able to execute its async function.
