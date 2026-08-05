@@ -73,3 +73,37 @@ So JSX elements are just a syntax for creating React elements.
 - Looks similar to HTML
 - Allows JavaScript inside markup
 - Makes UI development simpler
+
+### JSX Element vs React Component
+
+
+```Javascript
+React Component
+function Welcome() {
+    return <h1>Hello</h1>;
+}
+```
+Welcome is a React component.
+
+JSX Element
+```javascript
+<Welcome />
+```
+This is a JSX element.
+
+React sees <Welcome /> and calls the Welcome component.
+
+Visual Representation
+```text
+JSX Elements
+│
+├── HTML Elements
+│      ├── <div>
+│      ├── <button>
+│      └── <input>
+│
+└── React Component Elements
+       ├── <App />
+       ├── <Header />
+       └── <Welcome />
+```
