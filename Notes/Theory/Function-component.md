@@ -19,7 +19,7 @@ export default App;
 ```
 Both are functional components.
 
-Functional Component vs Normal JavaScript Function
+### Functional Component vs Normal JavaScript Function
 Normal Function
 ```javascript
 function add(a, b) {
