@@ -1,6 +1,7 @@
 ### Props
 Props (short for Properties) are read-only values passed from a parent component to a child component to provide data or configuration.
-
+### How props are passed?
+Props are passed from a parent component to a child component using JSX attributes. React then collects these attributes into a single JavaScript object and passes that object as the first argument to the child component.
 ### Why does props act like an object?
 
 Because it is an object.
