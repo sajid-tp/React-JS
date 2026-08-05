@@ -67,3 +67,26 @@ Child Component
 props.name
 props.age
 ```
+
+### Destructuring Props
+
+Instead of:
+
+function Welcome(props) {
+    return <h1>{props.name}</h1>;
+}
+
+you can write:
+
+function Welcome({ name, age }) {
+    return (
+        <>
+            <h1>{name}</h1>
+            <p>{age}</p>
+        </>
+    );
+}
+
+React still passes the same object.
+
+JavaScript simply extracts the properties.
