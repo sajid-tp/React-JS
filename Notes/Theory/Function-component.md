@@ -40,3 +40,16 @@ Returns:
 JSX
 
 React takes that JSX and renders it into the DOM.
+
+## Functional Component vs Class Component
+
+| Functional Component | Class Component |
+|----------------------|-----------------|
+| JavaScript function | ES6 class |
+| Returns JSX directly | Returns JSX from `render()` |
+| Uses Hooks | Uses lifecycle methods and `this.state` |
+| No `this` keyword | Uses `this` |
+| State is managed using `useState()` | State is managed using `this.state` and `this.setState()` |
+| Uses `useEffect()` for lifecycle-related behavior | Uses lifecycle methods like `componentDidMount()`, `componentDidUpdate()`, and `componentWillUnmount()` |
+| Simpler and less boilerplate | More verbose and requires more boilerplate |
+| Recommended for modern React development | Mostly used in legacy React applications |
