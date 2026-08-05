@@ -71,13 +71,13 @@ props.age
 ### Destructuring Props
 
 Instead of:
-
+```javascript
 function Welcome(props) {
     return <h1>{props.name}</h1>;
 }
-
+```
 you can write:
-
+```javascript
 function Welcome({ name, age }) {
     return (
         <>
@@ -86,7 +86,7 @@ function Welcome({ name, age }) {
         </>
     );
 }
-
+```
 React still passes the same object.
 
 JavaScript simply extracts the properties.
