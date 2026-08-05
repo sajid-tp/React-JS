@@ -23,3 +23,19 @@ Behavior based on the dependency array:
 | Omitted | After every render |
 | `[]` (empty) | Only once, after the initial render |
 | `[a, b]` | After the initial render, and whenever `a` or `b` changes |
+
+
+Example:
+```javascript
+jsx
+function Timer() {
+  const [seconds, setSeconds] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => setSeconds(s => s + 1), 1000);
+    return () => clearInterval(interval); // cleanup
+  }, []);
+
+  return <p>{seconds}s elapsed</p>;
+}
+```
