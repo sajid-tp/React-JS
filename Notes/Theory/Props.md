@@ -33,3 +33,37 @@ Welcome({
     age: 22
 });
 ```
+
+### Flow
+Parent Component
+```text
+<Welcome
+    name="Sajid"
+    age={22}
+/>
+
+          │
+          ▼
+
+React creates
+
+{
+    name: "Sajid",
+    age: 22
+}
+
+          │
+          ▼
+
+Calls
+
+Welcome(props)
+
+          │
+          ▼
+
+Child Component
+
+props.name
+props.age
+```
