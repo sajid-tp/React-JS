@@ -40,6 +40,32 @@ These represent HTML elements.
 <App />
 ```
 These represent React components.
+
+### What happens internally?
+
+When you write:
+```javascript
+<h1>Hello</h1>
+
+React (through Babel) conceptually converts it into:
+
+React.createElement(
+    "h1",
+    null,
+    "Hello"
+);
+```
+Similarly,
+```javascript
+<Welcome name="Sajid" />
+
+becomes conceptually:
+
+React.createElement(Welcome, {
+    name: "Sajid"
+});
+```
+So JSX elements are just a syntax for creating React elements.
 ### Why JSX?
 - Why use JSX?
 - Easier to read
