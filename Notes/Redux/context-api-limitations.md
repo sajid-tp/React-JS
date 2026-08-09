@@ -5,3 +5,8 @@
 - No middleware – No built-in way to handle async logic (API calls, logging, etc.) — you have to hand-roll it with useEffect.
 - No dev tools – No time-travel debugging or action history like Redux DevTools gives you.
 - Not built for frequent updates – Works fine for rarely-changing data (theme, auth), but performs poorly with fast/complex state changes (forms, real-time data).
+
+
+- No structure → unpredictable updates  
+- No selectors → unnecessary re-renders  
+- No middleware/devtools → no way to trace why something re-rendered or changed  
