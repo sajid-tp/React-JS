@@ -28,7 +28,7 @@ function add(a, b) {
 ```
 Returns:
 
-Number
+Number  
 Functional Component
 ```javascript
 function App() {
