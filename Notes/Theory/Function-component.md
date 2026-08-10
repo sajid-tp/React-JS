@@ -41,6 +41,23 @@ JSX
 
 React takes that JSX and renders it into the DOM.
 
+### Class Component — Definition
+
+A class component is a React component defined using a JavaScript class that extends React.Component.
+```javascript
+import React from "react";
+
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello World</h1>;
+  }
+}
+```
+
+In simple terms:
+
+A class component is a React component created using a JavaScript class, where the render() method returns the UI that should be displayed.
+
 ## Functional Component vs Class Component
 
 | Functional Component | Class Component |
