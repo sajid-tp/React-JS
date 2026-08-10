@@ -17,3 +17,31 @@ Redux works well with middleware and Redux Toolkit features such as createAsyncT
 In one sentence:
 
 Context is mainly for sharing data; Redux is for managing complex shared application state in a predictable, debuggable, and structured way.
+```text
+        ┌──────────────┐
+        │     UI       │
+        │   Component  │
+        └──────┬───────┘
+               │
+          dispatch(action)
+               ↓
+        ┌──────────────┐
+        │   Middleware │
+        │ (Thunk/Saga) │
+        └──────┬───────┘
+               ↓
+        ┌──────────────┐
+        │    Reducer   │
+        └──────┬───────┘
+               ↓
+        ┌──────────────┐
+        │     Store    │
+        │    (State)   │
+        └──────┬───────┘
+               │
+          Updated state
+               ↓
+        ┌──────────────┐
+        │      UI      │
+        └──────────────┘
+```
